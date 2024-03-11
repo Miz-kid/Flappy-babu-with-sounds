@@ -18,26 +18,26 @@ cloud1_size = random. choice((90, 100))
 cloud2_size = random. choice((90, 100))
 
 
-bird1 = pygame.image.load('Graphics\Bird anim 1.png')           #change
-bird2 = pygame.image.load('Graphics\Bird anim 2.png')
-bird1_c = pygame.image.load('Graphics\cird_c_1.png')           #change
-bird2_c = pygame.image.load('Graphics\cird_c_2.png')
+bird1 = pygame.image.load('Graphics/Bird anim 1.png')           #change
+bird2 = pygame.image.load('Graphics/Bird anim 2.png')
+bird1_c = pygame.image.load('Graphics/cird_c_1.png')           #change
+bird2_c = pygame.image.load('Graphics/cird_c_2.png')
 
-cloud1 = pygame.image.load('Graphics\Cloud.png')
-cloud2 = pygame.image.load('Graphics\Cloud.png')
+cloud1 = pygame.image.load('Graphics/Cloud.png')
+cloud2 = pygame.image.load('Graphics/Cloud.png')
 
 cloud1 = pygame.transform.scale(cloud1, (cloud1_size, cloud1_size))
 cloud2 = pygame.transform.scale(cloud2, (cloud2_size, cloud2_size))
 
-pipe_b = pygame.image.load('Graphics\Pipe1.png')              #change
-pipe_t = pygame.image.load('Graphics\Pipe1.png')
+pipe_b = pygame.image.load('Graphics/Pipe1.png')              #change
+pipe_t = pygame.image.load('Graphics/Pipe1.png')
 
 bird1 = pygame.transform.scale(bird1, (50, 50))
 bird2 = pygame.transform.scale(bird2, (50, 50))  #suposed to be 40
 #For color
-pipe_b_c=pygame.image.load('Graphics\Colored Pipe.png')
-pipe_t_c=pygame.image.load('Graphics\Colored Pipe.png')
-background = pygame.image.load('Graphics\eiolet.png').convert_alpha()
+pipe_b_c=pygame.image.load('Graphics/Colored pipe.png').convert_alpha()
+pipe_t_c=pygame.image.load('Graphics/Colored pipe.png').convert_alpha()
+background = pygame.image.load('Graphics/eiolet.png').convert_alpha()
 cloud1_c = pygame.image.load('Graphics/Cloud white.png').convert_alpha()
 cloud2_c = pygame.image.load('Graphics/Cloud white.png').convert_alpha()
 cloud1_c = pygame.transform.scale(cloud1_c, (cloud1_size, cloud1_size))
@@ -45,9 +45,9 @@ cloud2_c = pygame.transform.scale(cloud2_c, (cloud2_size, cloud2_size))
 
 bird = bird1
 
-pipe_b = pygame.transform.scale(pipe_b, (470, 470))
-pipe_t = pygame.transform.scale(pipe_t, (470, 470))
-pipe_t = pygame.transform.rotate(pipe_t, 180)
+pipe_b = pygame.transform.scale(pipe_b, (471, 470))
+pipe_t = pygame.transform.scale(pipe_t, (471, 470))
+pipe_t = pygame.transform.rotate(pipe_t, 181)
 
 
 
@@ -70,13 +70,13 @@ pipe_t_y = pipe_b_y - 630
 
 
 #game comps
-fly_sound = pygame.mixer.Sound("Sounds\wing.wav")
+fly_sound = pygame.mixer.Sound("Sounds/wing.wav")
 fly_sound.set_volume(0.3)
-hit_sound = pygame.mixer.Sound("Sounds\die.wav")
+hit_sound = pygame.mixer.Sound("Sounds/die.wav")
 hit_sound.set_volume(0.3)
-death_sound = pygame.mixer.Sound("Sounds\die.wav")
+death_sound = pygame.mixer.Sound("Sounds/die.wav")
 death_sound.set_volume(0.3)
-point_sound = pygame.mixer.Sound("Sounds\point.wav")
+point_sound = pygame.mixer.Sound("Sounds/point.wav")
 point_sound.set_volume(0.3)
 
 
