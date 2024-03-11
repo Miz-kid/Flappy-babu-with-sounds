@@ -3,7 +3,7 @@ import pygame
 import sys
 import time
 
-#bruh
+
 pygame.init()
 clock = pygame.time.Clock()
 clock2 = pygame.time.Clock()
